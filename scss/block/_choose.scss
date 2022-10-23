@@ -1,0 +1,211 @@
+.choose {
+
+  &__block {
+    background-color: #2c343e;
+    border-radius: 10px;
+    position: relative
+  }
+
+  &__text-block {
+    max-width: 540px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 86px;
+    text-align: center
+  }
+
+  &__title {
+    @include title;
+    font-size: 40px;
+    line-height: 48px;
+    color: $little-color;
+    margin-bottom: 32px
+  }
+
+  &__text {
+    @include text($text-color);
+  }
+
+  &__list {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+
+  &__item {
+    max-width: 350px;
+    text-align: center;
+    background-color: $main-color;
+    border-radius: 8px;
+    padding: 0 47px 47px
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__sub-title {
+    @include title;
+    font-size: 24px;
+    line-height: 32px;
+    color: $little-color;
+    padding-top: 56px;
+    margin-bottom: 24px
+  }
+
+  &__sub-text {
+    max-width: 255px;
+    @include text($text-color);
+  }
+
+
+  &__item:first-child::before {
+    width: 72px;
+    background-image: url('../img/choose1.svg');
+    display: inline-block;
+    margin-top: 72px
+  }
+
+  &__item:nth-child(2)::before {
+    width: 72px;
+    background-image: url('../img/choose2.svg');
+    display: inline-block;
+    margin-top: 72px
+  }
+
+  &__item:nth-child(3)::before {
+    width: 72px;
+    background-image: url('../img/choose3.svg');
+    display: inline-block;
+    margin-top: 72px
+  }
+
+  &__button {
+    width: 100%;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    height: 250px;
+    position: absolute;
+    z-index: -1;
+    top: 95%
+  }
+
+  &__item:first-child::before,
+  &__item:nth-child(2)::before,
+  &__item:nth-child(3)::before {
+    content: "";
+    height: 72px;
+    background-repeat: no-repeat;
+  }
+
+
+}
+
+@media only screen and (max-width:750px) {
+  .choose {
+    &__list {
+      max-width: 1100px;
+      flex-direction: column;
+      padding: 0 50px;
+    }
+
+    &__item {
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px 40px;
+      text-align: left;
+
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+
+    &__sub-title {
+      padding-top: 0;
+      margin-bottom: 16px;
+    }
+
+    &__item:first-child::before,
+    &__item:nth-child(2)::before,
+    &__item:nth-child(3)::before {
+      margin-top: 0;
+      max-width: 72px;
+      height: 72px;
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    &__text-blok>p {
+      max-width: 345px;
+    }
+
+    &__text-blok {
+      margin-left: 40px;
+    }
+
+    &__button {
+      height: 305px;
+    }
+
+
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  .choose {
+    &__list {
+      align-items: center;
+    }
+
+    &__item {
+      flex-direction: column;
+      max-width: 279px;
+      text-align: center;
+      padding: 0 12px 51px 12px;
+    }
+
+    &__item:first-child::before,
+    &__item:nth-child(2)::before,
+    &__item:nth-child(3)::before {
+      margin-top: 72px;
+      margin-bottom: 56px;
+      width: 72px;
+      height: 72px;
+    }
+
+    &__text-blok {
+      margin-left: 0;
+    }
+
+    &__button {
+      height: 605px;
+    }
+
+    &__list {
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 25px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__text-block {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+  }
+}

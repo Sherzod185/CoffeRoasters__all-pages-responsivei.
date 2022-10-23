@@ -1,0 +1,159 @@
+.effect_2 li:before,
+.effect_2 li:after{
+  position: absolute;
+  content: "";
+  width: 0;
+  background: rgba(255,255,255,.8);
+  top: 3px;
+  bottom: 3px;
+  transition: all .35s;
+}
+
+.effect_2 li:before{
+  left: 3px;
+}
+
+.effect_2 li:after{
+  right: 3px;
+}
+
+.effect_2 a{
+  font-size: 18px;
+}
+
+.effect_2 li:hover:before,
+.effect_2 li:hover:after{
+  width: 75%;
+}
+
+.header-cite {
+  & {
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    display: block;
+    top: 0;
+    position: fixed;
+    background-color: #FEFCF7;
+  }
+
+  &__header-block {
+    @include flex;
+    align-items: center;
+    padding: 43px 0;
+  }
+
+  &__list {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__item+&__item {
+    margin-left: 33px;
+  }
+
+  &__logo-block {
+    max-width: 286px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    transition: all .5s ease;
+  }
+
+  &__link:hover {
+    color: #333D4B;
+  }
+
+  &__link:hover {
+    color: #14181c;
+  }
+
+  &__label {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width:689px) {
+
+
+  .header-cite {
+
+    &__header-block {
+      padding: 14.28px 0;
+    }
+
+    &__logo {
+      max-width: 163px;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__label {
+      width: 30px;
+      height: 30px;
+      margin-left: auto;
+      background-image: url('../../img/header-list.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+
+    }
+
+
+
+    &__btn:checked~label &__list {
+      max-width: 100%;
+      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: auto;
+      position: absolute;
+      right: 20px;
+      top: 61px;
+      background-color: rgba(23, 142, 216, 0.541);
+      border-radius: 8px;
+      padding: 6px 12px 12px 12px;
+
+    }
+
+    &__btn:checked~label &__list:hover {
+      background-color: rgba(221, 241, 69, 0.366);
+    }
+
+    &__btn:checked~label {
+      background-image: url('../../img/icon.svg');
+    }
+
+    &__item+&__item {
+      margin-left: 0;
+    }
+
+    &__link {
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.923077px;
+      color: #eff1f9;
+    }
+
+    &__link:hover {
+      color: #f15a02;
+    }
+  }
+
+
+
+
+
+
+
+}
