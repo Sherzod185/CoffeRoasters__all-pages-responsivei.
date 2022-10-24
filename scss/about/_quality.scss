@@ -1,4 +1,4 @@
-.quality{
+.quality {
   &__title {
     max-width: 517px;
     @include title;
@@ -7,6 +7,7 @@
     color: #FEFCF7;
     margin-bottom: 32px;
   }
+
   &__text {
     max-width: 540px;
     font-weight: 400;
@@ -15,7 +16,8 @@
     color: #FEFCF7;
     opacity: 0.8;
   }
-  &__img{
+
+  &__img {
     max-width: 445px;
     margin-right: 70px;
     position: relative;
@@ -24,10 +26,12 @@
     border-radius: 15px;
     overflow: hidden;
   }
-  &__img2{
+
+  &__img2 {
     display: none;
   }
-  &__block{
+
+  &__block {
     border-radius: 10px;
     background-color: #2C343E;
     display: flex;
@@ -35,71 +39,79 @@
     padding-bottom: 50px;
     padding-top: 52px;
   }
-  &__text-block{
+
+  &__text-block {
     max-width: 517px;
     margin-left: 88px;
     padding-right: 40px;
     margin-right: auto;
   }
 }
+
 @media only screen and (max-width:930px) {
-  .quality{
-&__img{
-  display: none;
-}
-&__img2{
-  max-width: 573px;
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-  top: -140px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-&__block{
-  flex-direction: column;
-  align-items: center;
-  padding-right: 74px;
-  padding-left: 74px;
-}
-&__text-block{
-  margin-right: 0;
-  margin-left: 0;
-  padding-right: 0;
-}
+  .quality {
+    &__img {
+      display: none;
+    }
+
+    &__img2 {
+      max-width: 573px;
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      top: -140px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    &__block {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 74px;
+      padding-left: 74px;
+    }
+
+    &__text-block {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+    }
 
 
   }
-  
+
 }
 
-@media only screen and (max-width:703px)
-{
-  .quality{
-    &__title{
+@media only screen and (max-width:703px) {
+  .quality {
+    &__title {
       max-width: 279px;
       text-align: center;
       font-size: 28px;
-line-height: 28px;
-margin: 0 0 24px 0;
-margin-right: auto;
-margin-left: auto;
+      line-height: 28px;
+      margin: 0 0 24px 0;
+      margin-right: auto;
+      margin-left: auto;
     }
-    &__text-block{
+
+    &__text-block {
       text-align: center;
-    
+
     }
-    &__text{
+
+    &__text {
       max-width: 279px;
       font-size: 15px;
-line-height: 25px;
+      line-height: 25px;
     }
-    &__block{
-      padding-right:30px ;
+
+    &__block {
+      padding-right: 30px;
       padding-left: 30px;
       padding-top: 0;
     }
-    &__img2{
+
+    &__img2 {
       top: -70px;
     }
   }

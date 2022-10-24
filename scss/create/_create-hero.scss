@@ -1,11 +1,11 @@
-.about-hero {
+.create-hero {
   & {
     margin-top: 113.88px;
   }
 
   &__text-block {
     padding: 117px 85px;
-    background-image: url('../../img/herobg.jpg');
+    background-image: url("../../img/create-herobg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
@@ -32,9 +32,9 @@
 
 
 @media only screen and (max-width:850px) {
-  .about-hero {
+  .create-hero {
     &__text-block {
-      background-image: url('../../img/about-herobg.jpg');
+      background-image: url('../../img/create-herobg2.png');
       padding: 104px 58px;
       background-position: 37%;
       border-radius: 10px;
@@ -64,7 +64,7 @@
 }
 
 @media only screen and (max-width:689px) {
-  .about-hero {
+  .create-hero {
     margin-top: 61.5px;
 
 
@@ -74,13 +74,13 @@
 }
 
 @media only screen and (max-width:483px) {
-  .about-hero {
+  .create-hero {
     &__text-block {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      background-image: url('../../img/about-hero3.jpg');
+      background-image: url('../../img/create-herobg3.jpg');
       padding: 100px 10px;
     }
 

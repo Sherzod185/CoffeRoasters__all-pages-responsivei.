@@ -1,28 +1,28 @@
 .effect_2 li:before,
-.effect_2 li:after{
+.effect_2 li:after {
   position: absolute;
   content: "";
   width: 0;
-  background: rgba(255,255,255,.8);
+  background: rgba(255, 255, 255, .8);
   top: 3px;
   bottom: 3px;
   transition: all .35s;
 }
 
-.effect_2 li:before{
+.effect_2 li:before {
   left: 3px;
 }
 
-.effect_2 li:after{
+.effect_2 li:after {
   right: 3px;
 }
 
-.effect_2 a{
+.effect_2 a {
   font-size: 18px;
 }
 
 .effect_2 li:hover:before,
-.effect_2 li:hover:after{
+.effect_2 li:hover:after {
   width: 75%;
 }
 
@@ -139,8 +139,10 @@
     }
 
     &__link {
-      font-size: 15px;
+      font-family: $main-font;
+      font-size: 17px;
       line-height: 20px;
+      margin-bottom: 7px;
       letter-spacing: 0.923077px;
       color: #eff1f9;
     }
