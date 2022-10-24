@@ -114,6 +114,10 @@
       flex-direction: column;
     }
 
+    &__item:not(:last-child) {
+      margin-right: 0;
+    }
+
     &__container {
       background-position: 50% 3%;
     }

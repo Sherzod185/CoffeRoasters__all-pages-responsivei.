@@ -1,0 +1,124 @@
+.contry {
+  &__container {
+    max-width: 1085px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 144px;
+  }
+
+  &__title {
+    max-width: 255px;
+    @include title;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    margin-bottom: 72px;
+  }
+
+  &__litle-title {
+    @include title;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin-bottom: 24px;
+  }
+
+  &__litle-text {
+    @include text($text-color);
+    color: #333D4B;
+
+  }
+
+  &__item {
+    max-width: 285px;
+  }
+
+  &__item:nth-child(1):before {
+    width: 41px;
+    height: 49px;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("../../img/contry1.svg");
+    display: inline-block;
+    margin-bottom: 45px;
+  }
+
+  &__item:nth-child(2):before {
+    width: 51px;
+    height: 49px;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("../../img/contry2.svg");
+    display: inline-block;
+    margin-bottom: 45px;
+  }
+
+  &__item:nth-child(3):before {
+    width: 48px;
+    height: 43px;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("../../img/contry3.svg");
+    display: inline-block;
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 95px;
+  }
+}
+@media only screen and (max-width:803px){
+  .contry{
+    &__container{
+      max-width: 688px;
+    }
+    &__litle-title {
+      max-width: 223px;
+      font-size: 24px;
+line-height: 36px;
+margin-right: 20px;
+}
+&__litle-text{
+  max-width: 220px;
+  margin-right: 18px;
+}
+&__item:not(:last-child) {
+  margin-right: 0;
+}
+  
+  }
+}
+@media only screen and (max-width:580px){
+  .contry{
+    &__list{
+      flex-direction: column;
+    }
+    &__litle-title {
+      text-align: center;
+      max-width: 327px;
+      font-size: 28px;
+      line-height: 36px;
+      margin-right: 0;
+}
+&__litle-text{
+  max-width: 327px;
+  margin-right: 0;
+}
+&__item:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 80px;
+}
+&__list{
+  align-items: center;
+  text-align: center;
+}
+&__title{
+ margin-left: auto;
+ margin-right: auto;
+}
+  }
+}
