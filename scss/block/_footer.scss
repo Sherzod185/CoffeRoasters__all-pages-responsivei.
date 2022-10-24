@@ -1,11 +1,16 @@
 .footer-cite{
+  &__bgc{
+    max-width: 1280px;
+    background-color: #2c343e;
+  margin-right: auto;
+  margin-left: auto;
+  }
 &__big-block {
   max-width: 1150px;
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  background-color: #2c343e;
   margin-bottom: 88px;
 }
 
